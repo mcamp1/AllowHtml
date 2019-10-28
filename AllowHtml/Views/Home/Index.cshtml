@@ -1,0 +1,11 @@
+﻿@model AllowHtml.Models.Model
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.TextAreaFor(x => x.htmlString)
+    <button type="submit">OK</button>
+}
